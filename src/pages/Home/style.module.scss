@@ -4,4 +4,13 @@
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+  >.tag{
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    width: 55vw;
+    >li{
+      margin-right: 30px;
+    }
+  }
 }

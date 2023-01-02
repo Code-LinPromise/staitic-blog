@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "538852",
+      "name": "TAG",
+      "font_class": "tag",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
       "icon_id": "1727422",
       "name": "205设置",
       "font_class": "shezhi",

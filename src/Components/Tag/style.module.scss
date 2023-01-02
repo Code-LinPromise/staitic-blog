@@ -1,0 +1,25 @@
+.wrapper{
+  padding: 7px 15px;
+  border-radius: 12px;
+  background-color: var(--light-tag-bg-color);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  >.logo{
+    color:var(--light-tag-logo-color);
+    font-size: 12px;
+  }
+  >.font{
+    color: var(--light-tag-font-color);
+    margin-left: 10px;
+    position: relative;
+    top: -2px;
+  }
+}
+.wrapper:hover{
+  background-color: var(--light-tag-bg-hover-color);
+  transition: all 0.2s;
+  >.font{
+    color: var(--light-tag-font-hover-color);
+  }
+}
