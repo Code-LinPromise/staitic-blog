@@ -1,9 +1,15 @@
 .wrapper{
   background-color: var(--light-top-nav-bg-color);
+  display: flex;
+  align-items: center;
+  >.widget{
+    margin-left: 50px;
+  }
   >.top{
+    justify-items: center;
+    margin-left: 200px;
     display: flex;
     height: 56px;
-    display: flex;
     align-items: center;
     justify-content: center;
     >.name{
@@ -32,7 +38,17 @@
     >.logo{
       display: flex;
       margin-left: 200px;
+      align-items: center;
       >span{
+        cursor: pointer;
+        font-size: 28px;
+        margin-left: 20px;
+        color: var(--light-font-color);
+        transition: all 0.1s;
+        padding: 10px;
+        border-radius: 50%;
+      }
+      >a>span{
         cursor: pointer;
         font-size: 28px;
         margin-left: 20px;
