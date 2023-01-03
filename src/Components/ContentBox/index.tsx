@@ -1,9 +1,14 @@
 import React from 'react';
 import  s from  "./style.module.scss"
-const ContentBox = () => {
+
+type Props={
+    title:string
+}
+const ContentBox = (props:Props) => {
+    const {title}=props
     return (
         <div className={s.wrapper}>
-            <h1>Do more useless things</h1>
+            <h1>{title}</h1>
         </div>
     );
 };

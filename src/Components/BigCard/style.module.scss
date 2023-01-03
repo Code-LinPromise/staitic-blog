@@ -1,0 +1,70 @@
+.wrapper{
+  width: 55vw;
+  height: 350px;
+  border-radius: 12px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0px 7px 43px 0px var(--light-card-shadow-color);
+  cursor: pointer;
+  transition: all 0.3s;
+  >.left{
+    height: 100%;
+    >img{
+      height: 100%;
+    }
+  }
+  >.right{
+    background-color: var(--light-big-card-bg-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    padding: 30px 30px;
+    >.leftTop{
+      display: flex;
+      justify-content: space-between;
+      >.user{
+        display: flex;
+        align-items: center;
+        >img{
+          width: 40px;
+          border-radius: 50%;
+        }
+        >strong{
+          margin-left: 10px;
+          color: var(--light-font-color);
+        }
+      }
+    }
+    >.leftBottom{
+      >h2{
+        margin-top: 20px;
+        font-weight: 600;
+        color: var(--light-font-color);
+      }
+      >p{
+        margin-top: 10px;
+        color: var(--light-big-card-p-color);
+        line-height: 25px;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        font-size: 16px;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        word-break: break-all;
+        overflow: hidden;
+      }
+    }
+    >.time{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      color: var(--light-big-card-p-color);
+      font-size: 12px;
+    }
+  }
+}
+.wrapper:hover{
+  opacity: 0.75;
+}
