@@ -4,11 +4,22 @@ import ContentBox from "../../Components/ContentBox";
 import  s from "./style.module.scss"
 import Tag from "../../Components/Tag";
 import BigCard from "../../Components/BigCard";
+import SmallCard from "../../Components/SmallCard";
 import BigCardImage from "../../assets/source-4280758_1920.jpg"
 import UserLpt from "../../assets/userLpt.jpg"
+import UserLjb from "../../assets/userLjb.jpg"
+import SmallCardLjb from "../../assets/fir-tree-7620654_1920.jpg"
 
 const Home = () => {
     const array:string[]=["all","genesis","help","碎碎念"]
+    const user:object[]=[
+        {
+
+        },
+        {
+
+        }
+    ]
     return (
         <>
             <TopNav/>
@@ -27,8 +38,24 @@ const Home = () => {
                              details={"哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"} title={"qweqweqwe"}
                     />
                 </div>
+                <ul className={s.smallCard}>
+                    {
+                        user.map((item:object,index:number)=>{
+                            return <li key={index}>
+                                <SmallCard userLogo={UserLjb} userName={"AjaxMactavish"}
+                                           tagTitle={"依托农协"} image={SmallCardLjb} title={"大萨达所多"}
+                                           details={"哈哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或哈哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或"}
+                                           time={"Tue，Jan 3，2023"}
+                                />
+                            </li>
+                        })
+                    }
+                </ul>
             </div>
-            <br/><br/><br/><br/>
+            <div className={s.footer}>
+                <span>Powered by React & ReactHooks</span>
+                <span>Copyright © 2023 smll</span>
+            </div>
         </>
     );
 };
