@@ -49,7 +49,7 @@ const TopNav = () => {
                 <div id="he-plugin-simple" ></div>
             </div>
             <div className={s.top}>
-                <h2 className={s.name}>smllhack</h2>
+                <h2 className={s.name} onClick={goHome}>smllhack</h2>
                 <ul className={s.link}>
                     <li onClick={goHome}>Posts</li>
                     <li onClick={goProjects}>Projects</li>

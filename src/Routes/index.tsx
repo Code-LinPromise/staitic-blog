@@ -5,6 +5,7 @@ import Home from "../pages/Home";
 import Links from "../pages/Links";
 import About from "../pages/About";
 import Projects from "../pages/Projects";
+import LayoutTopNav from "../pages/LayoutTopNav";
 
 export const router = createHashRouter([
     {
@@ -12,19 +13,26 @@ export const router = createHashRouter([
         element:(<Navigate to="/home"/>)
     },
     {
-        path:"/home",
-        element:<Home/>
+        path:"/",
+        element:<LayoutTopNav/>,
+        children:[
+            {
+                path:"/home",
+                element:<Home/>
+            },
+            {
+                path: "/about",
+                element: <About/>
+            },
+            {
+                path: "/links",
+                element: <Links/>
+            },
+            {
+                path: "/projects",
+                element: <Projects/>
+            },
+        ]
     },
-    {
-        path: "/about",
-        element: <About/>
-    },
-    {
-        path: "/links",
-        element: <Links/>
-    },
-    {
-        path: "/projects",
-        element: <Projects/>
-    },
+
 ]);

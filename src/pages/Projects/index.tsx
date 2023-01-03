@@ -1,10 +1,13 @@
 import React from 'react';
+import TopNav from "../../Components/TopNav";
 
 const Projects = () => {
     return (
-        <div>
-            projects
-        </div>
+        <>
+            <div>
+                projects
+            </div>
+        </>
     );
 };
 

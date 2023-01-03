@@ -22,7 +22,6 @@ const Home = () => {
     ]
     return (
         <>
-            <TopNav/>
             <div className={s.wrapper}>
                 <ContentBox title={"Do more useless things"}/>
                 <ul className={s.tag}>
