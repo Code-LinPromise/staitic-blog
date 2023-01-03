@@ -1,8 +1,10 @@
 import React from 'react';
 import s from "./style.module.scss"
 import {useEffect} from "react";
+import {useNavigate} from "react-router-dom";
 
 const TopNav = () => {
+    const navigate=useNavigate()
     useEffect(()=>{
         window.WIDGET = {
             "CONFIG": {
@@ -29,6 +31,18 @@ const TopNav = () => {
         script.setAttribute('src', "https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0")
         document.body.append(script)
     },[])
+    function goLinks(){
+        navigate("/links")
+    }
+    function goProjects(){
+        navigate("/projects")
+    }
+    function goAbout(){
+        navigate("/about")
+    }
+    function goHome(){
+        navigate("/home")
+    }
     return (
         <div className={s.wrapper}>
             <div className={s.widget}>
@@ -37,10 +51,10 @@ const TopNav = () => {
             <div className={s.top}>
                 <h2 className={s.name}>smllhack</h2>
                 <ul className={s.link}>
-                    <li>Posts</li>
-                    <li>Projects</li>
-                    <li>About</li>
-                    <li>Links</li>
+                    <li onClick={goHome}>Posts</li>
+                    <li onClick={goProjects}>Projects</li>
+                    <li onClick={goAbout}>About</li>
+                    <li onClick={goLinks}>Links</li>
                 </ul>
                 <div className={s.logo}>
                     <span className="iconfont icon-shezhi"></span>
