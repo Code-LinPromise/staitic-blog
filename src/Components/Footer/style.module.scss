@@ -1,0 +1,15 @@
+.footer{
+  margin-top: 80px;
+  height: 120px;
+  background-color: var(--light-top-nav-bg-color);
+  display: flex;
+  flex-flow: column;
+  justify-content: end;
+  align-items: center;
+  
+
+  >span{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}

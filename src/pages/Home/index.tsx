@@ -51,10 +51,6 @@ const Home = () => {
                     }
                 </ul>
             </div>
-            <div className={s.footer}>
-                <span>Powered by React & ReactHooks</span>
-                <span>Copyright © 2023 smll</span>
-            </div>
         </>
     );
 };
