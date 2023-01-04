@@ -4,9 +4,7 @@ import  s from "./style.module.scss"
 import Tag from "../../Components/Tag";
 import BigCard from "../../Components/BigCard";
 import SmallCard from "../../Components/SmallCard";
-import BigCardImage from "../../assets/source-4280758_1920.jpg"
-import UserLpt from "../../assets/userLpt.jpg"
-import  {useUserInfo} from "../../store";3
+import  {useUserInfo} from "../../store";
 type smallUser ={
     userLogo:string,
     userName:string,

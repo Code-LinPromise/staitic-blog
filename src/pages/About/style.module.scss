@@ -1,0 +1,10 @@
+.wrapper{
+  display: flex;
+  justify-items: center;
+  flex-flow: column;
+  align-items: center;
+  >.name{
+    width: 55vw;
+    margin-top: 50px;
+  }
+}
