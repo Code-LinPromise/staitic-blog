@@ -6,10 +6,9 @@
   flex-flow: column;
   justify-content: end;
   align-items: center;
-  
-
   >span{
     margin-top: 20px;
     margin-bottom: 10px;
+    color: var(--light-font-color);
   }
 }
