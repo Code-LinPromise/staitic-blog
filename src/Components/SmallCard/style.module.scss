@@ -3,6 +3,10 @@
   flex-flow: column;
   padding: 20px 15px;
   width: 20vw;
+  min-height: 500px;
+  max-height: 500px;
+  min-width: 20vw;
+  max-width: 20vw;
   border-radius: 12px;
   height: 500px;
   background-color: var(--light-big-card-bg-color);

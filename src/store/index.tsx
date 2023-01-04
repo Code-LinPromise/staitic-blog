@@ -4,6 +4,7 @@ import userLjb from "../assets/userLjb.jpg"
 import userShg from "../assets/userShg.jpg"
 import imgLjb from "../assets/fir-tree-7620654_1920.jpg"
 import imgLpt from "../assets/source-4280758_1920.jpg"
+import userMjf from "../assets/_C8Q$}5Y}P[347)]SJKKUVB.jpg"
 
 
 export  const useUserInfo = create(() => ({
@@ -25,7 +26,17 @@ export  const useUserInfo = create(() => ({
             title:"断崖",
             details:"石头很小，山群很大，生命繁忙。时间在头顶上的云层上空飘逝，断崖坐落在一个地方，从来没有移动过。朴素的断崖远离了灯火的辉煌，坚强的断崖支撑着深情的凝视。",
             time:"Tue，Jan 3，2023"
-        }
+        },
+        {
+            userLogo:userMjf,
+            userName:"番薯不是红苕",
+            tagTitle:"saying",
+            image:imgLjb,
+            title:"只因你太美",
+            details:"《只因你太美》是中国内地男子音乐组合SWIN-S演唱的歌曲，由WILLIUS、RK、邓晶、蔡徐坤作词，WILLIUS作曲并编曲，收录在SWIN-S2016年12月20日发行的专辑《New World》中\n",
+            time:"Tue，Jan 3，2023"
+        },
+
     ],
     bigUser:[
         {

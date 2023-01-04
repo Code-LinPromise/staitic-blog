@@ -1,5 +1,9 @@
 .wrapper{
   width: 55vw;
+  min-width: 55vw;
+  max-width: 55vw;
+  min-height: 350px;
+  max-height: 350px;
   height: 350px;
   border-radius: 12px;
   display: flex;
