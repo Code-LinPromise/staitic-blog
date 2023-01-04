@@ -23,5 +23,14 @@
       }
     }
   }
+  >.studySide{
+    width: 55vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    >li{
+      margin-top: 30px;
+    }
+  }
 
 }

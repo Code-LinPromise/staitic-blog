@@ -13,7 +13,7 @@ const StudyCard = (props:Props) => {
     return (
         <div className={s.LinkItem}>
             <a className={s.ItemBody} href={itemUrl} title={itemContent} target="_blank">
-                <img src={itemIcon} className="Item-Avatar" />
+                <img src={itemIcon} className={s.ItemAvatar} />
                 <div className={s.ItemTitle}>
                     {itemName}
                 </div>

@@ -51,7 +51,7 @@ export  const useUserInfo = create(() => ({
     ]
 }))
 
-export const useStudyInfo=create(()=>{
+export const useStudyInfo=create(()=>({
     Frame:[
         { imageUrl: "https://img.webmuban.com/2020/10/STAET.png",name:"StartMVC",
             details:"优雅轻量, 易扩展 高效的 PHP框架,基于MVC和面向对象设计模式", url:"https://startmvc.com/"},
@@ -114,4 +114,4 @@ export const useStudyInfo=create(()=>{
         { imageUrl: "https://www.webmuban.com/wp-content/uploads/2020/10/logo-180x180-1.png",name:"React Native",
             details:"使用JavaScript和React编写原生移动应用", url:"https://reactnative.cn/"},
     ]
-})
+}))
