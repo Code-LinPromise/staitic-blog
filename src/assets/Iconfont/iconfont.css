@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1672680176998') format('truetype');
+  src: url('iconfont.ttf?t=1672935023410') format('truetype');
 }
 
 .iconfont {
@@ -15,11 +15,19 @@
   content: "\e605";
 }
 
+.icon-moonbyueliang:before {
+  content: "\e6a0";
+}
+
 .icon-shezhi:before {
   content: "\e8b8";
 }
 
 .icon-github-fill:before {
   content: "\e885";
+}
+
+.icon-a-qingtianbaitian:before {
+  content: "\e6a6";
 }
 

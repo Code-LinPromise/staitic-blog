@@ -1,4 +1,4 @@
-:root {
+:root  .light{
   --light-body-bg-color:#f3f7fd;
   --light-top-nav-bg-color:white;
   --light-font-color:black;
@@ -17,4 +17,26 @@
   --light-card-shadow-color: rgba(149, 157, 165, 0.2);
   --light-big-card-p-color:rgba(63, 61, 85, 0.63);
   --light-font-style-color:#3F3D55;
+  --light-shift-bg-color:#7ECCB4;
+}
+:root .dark{
+  --light-body-bg-color:#24292e;
+  --light-top-nav-bg-color:#31363f;
+  --light-font-color:#D6D8DA;
+  --light-font-hover-color:#adafb3;
+  --light-font-hover-logo-bg-color:#373c46;
+  --light-image-bg-start-color:#7386a9;
+  --light-image-bg-end-color:#c9afad;
+  --light-image-bg-half-color:#9bb8b6;
+  --light-image-font-color:#3f3d55;
+  --light-tag-bg-hover-color:#3c5552;
+  --light-tag-logo-color:#D6D8DA;
+  --light-tag-font-hover-color:#c8c9cb;
+  --light-tag-font-color:#D6D8DA;
+  --light-tag-bg-color:rgba(126, 204, 180, 0.36);
+  --light-big-card-bg-color:#31363F;
+  --light-card-shadow-color: rgba(149, 157, 165, 0);
+  --light-big-card-p-color:#768390;
+  --light-font-style-color:#D6D8DA;
+  --light-shift-bg-color:#7ECCB4;
 }

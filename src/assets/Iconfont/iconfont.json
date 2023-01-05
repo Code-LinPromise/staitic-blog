@@ -13,6 +13,13 @@
       "unicode_decimal": 58885
     },
     {
+      "icon_id": "792344",
+      "name": "moon-b-月亮",
+      "font_class": "moonbyueliang",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
       "icon_id": "1727422",
       "name": "205设置",
       "font_class": "shezhi",
@@ -25,6 +32,13 @@
       "font_class": "github-fill",
       "unicode": "e885",
       "unicode_decimal": 59525
+    },
+    {
+      "icon_id": "24639383",
+      "name": "晴天（白天）",
+      "font_class": "a-qingtianbaitian",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
     }
   ]
 }
