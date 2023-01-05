@@ -1,6 +1,6 @@
 import React from 'react';
 import  s from "./style.module.scss"
-import  imgSvg from "../../assets/$light_projects_banner.svg"
+import  imgSvg from "../../assets/githubImage.svg"
 import ProjectItem from "../../Components/ProjectItem";
 import {useProjectInfo} from "../../store";
 
