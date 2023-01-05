@@ -31,8 +31,8 @@ const PageDetails = () => {
     const  userInfo =useUserInfo(state=>state.User)
     useEffect(()=>{
         const info:User[]= userInfo.filter((item,index)=>{
-            if(id && typeof id ==="number"){
-                if(item.id == id){
+            if(id && typeof id ==="string"){
+                if(item.id == parseInt(id)){
                     return item
                 }
             }
