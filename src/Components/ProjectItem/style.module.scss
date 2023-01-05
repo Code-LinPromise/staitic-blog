@@ -1,0 +1,29 @@
+.wrapper{
+  background-color: var(--light-big-card-bg-color);
+  width: 20vw;
+  height: 100px;
+  border-radius: 12px;
+  display: flex;
+  flex-flow: column;
+  >span{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: var(--light-font-color);
+    font-size: 16px;
+  }
+  >div{
+    margin-top: 10px;
+    margin-left: 10px;
+    line-height: 25px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    word-break: break-all;
+    overflow: hidden;
+    >p{
+      color: var(--light-big-card-p-color);
+    }
+  }
+}

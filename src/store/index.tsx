@@ -4,7 +4,7 @@ import userLjb from "../assets/userLjb.jpg"
 import userShg from "../assets/userShg.jpg"
 import imgLjb from "../assets/fir-tree-7620654_1920.jpg"
 import imgLpt from "../assets/source-4280758_1920.jpg"
-import userMjf from "../assets/_C8Q$}5Y}P[347)]SJKKUVB.jpg"
+import userMjf from "../assets/userMjf.jpg"
 
 
 export  const useUserInfo = create(() => ({
@@ -113,5 +113,36 @@ export const useStudyInfo=create(()=>({
             details:"基于 Chrome V8 引擎的 JavaScript 运行环境", url:"https://www.nodeapp.cn/"},
         { imageUrl: "https://www.webmuban.com/wp-content/uploads/2020/10/logo-180x180-1.png",name:"React Native",
             details:"使用JavaScript和React编写原生移动应用", url:"https://reactnative.cn/"},
+    ]
+}))
+
+export const useProjectInfo =create(()=>({
+    projectInfo:[
+        {
+            title:"重写数组扩展方法-map",
+            details:"数组的map方法共接收两个参数，第一个参数为回调函数（callback），第二个参数为改变第一个参数（回调函数）中的this指针，也就是回调函数中的this指针将指向第二个参数（第二个参数可传可不传）",
+            url:"https://juejin.cn/post/7184484064399720504"
+        },
+        {
+            title:"重写数组扩展方法-forEach",
+            details:"在函数体内，首先要搞清楚，函数体内的this指针指向的是谁，在Javascript中，谁调用的这个函数，则这个函数体内的this就指向谁，所以我们需要使用变量去维护this指针。",
+            url:"https://juejin.cn/post/7182979610882080827"
+        },
+        {
+            title:"手写深拷贝",
+            details:"众所周知，在Javascript中对象的直接赋值都是浅拷贝，也就是说，直接赋值的话，两个变量指向同一个对象地址，只要其中一个变量改变了对象的值，另一个变量指向对象中的值也会随之改变，所以深拷贝在Javascript中就显得格外重要，下面，我将一步步手写深拷贝代码",
+            url:"https://juejin.cn/post/7182919659396694073"
+        },
+        {
+            title:"Vue3+TSX项目中使用Transition动画",
+            details:"在TSX文件中使用Transition,通过上边的代码块可以看出，在RouterView组件中通过{}的形式，利用对象解构解构出，RouterView将要渲染的组件以及路由信息，即Component对应将要渲染的组件（我们可以解构出组件，并在下方应用到），route即是路由信息。",
+            url:"https://juejin.cn/post/7182179751216283706",
+        },
+        {
+            title:"Vue3+TSX中使用Slots插槽",
+            details:"写Vue3+TSX时，突然感觉自己在写React，期间，使用到了slots插槽语法，在此分享一下自己在Vue3+TSX中使用Slots插槽的心得。",
+            url:"https://juejin.cn/post/7181825270683271226"
+        }
+
     ]
 }))
