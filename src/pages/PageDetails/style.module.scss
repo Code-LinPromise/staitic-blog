@@ -1,3 +1,50 @@
 .wrapper{
-
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  >.userInfo{
+    align-items: center;
+    width: 55vw;
+    display: flex;
+    margin-top: 50px;
+    >img{
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    >strong{
+      font-size: 20px;
+      margin-left: 30px;
+      color: var(--show-card-font-color);
+    }
+    >.tag{
+      margin-left: 30px;
+    }
+  }
+  >.time{
+    width: 55vw;
+    margin-top: 30px;
+    color: var(--details-time-color);
+  }
+  >img{
+    width: 55vw;
+    margin-top: 30px;
+    border-radius: 12px;
+  }
+  >div{
+    width: 55vw;
+    margin-top: 30px;
+    >h2{
+      color: var(--show-card-font-color);
+      font-weight: 600;
+    }
+    p{
+      font-size: 20px;
+      letter-spacing: 0.8px;
+      line-height: 1.8;
+      color: var(--show-card-font-color);
+    }
+  }
 }

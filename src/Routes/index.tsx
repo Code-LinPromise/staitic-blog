@@ -6,6 +6,7 @@ import Links from "../pages/Links";
 import About from "../pages/About";
 import Projects from "../pages/Projects";
 import LayoutTopNav from "../pages/LayoutTopNav";
+import PageDetails from "../pages/PageDetails";
 
 export const router = createHashRouter([
     {
@@ -16,6 +17,10 @@ export const router = createHashRouter([
         path:"/",
         element:<LayoutTopNav/>,
         children:[
+            {
+                path:"/details/:id",
+                element:<PageDetails/>
+            },
             {
                 path:"/home",
                 element:<Home/>
