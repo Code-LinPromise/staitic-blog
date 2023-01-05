@@ -3,7 +3,10 @@ import s from "./style.module.scss"
 import {useEffect} from "react";
 import {useNavigate} from "react-router-dom";
 
-const TopNav = () => {
+type Props={
+    setIsShow:React.Dispatch<boolean>
+}
+const TopNav = (props:Props) => {
     const navigate=useNavigate()
     useEffect(()=>{
         window.WIDGET = {
@@ -43,6 +46,9 @@ const TopNav = () => {
     function goHome(){
         navigate("/home")
     }
+    function isShow(){
+        props.setIsShow(true)
+    }
     return (
         <div className={s.wrapper}>
             <div className={s.widget}>
@@ -57,7 +63,7 @@ const TopNav = () => {
                     <li onClick={goLinks}>Links</li>
                 </ul>
                 <div className={s.logo}>
-                    <span className="iconfont icon-shezhi"></span>
+                    <span className="iconfont icon-shezhi" onClick={isShow}></span>
                     <a href="https://github.com/Code-LinPromise/Ninth-group-homework" target="_blank"><span className="iconfont icon-github-fill"></span></a>
                 </div>
             </div>

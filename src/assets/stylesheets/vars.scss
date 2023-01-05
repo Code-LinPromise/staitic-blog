@@ -18,6 +18,9 @@
   --light-big-card-p-color:rgba(63, 61, 85, 0.63);
   --light-font-style-color:#3F3D55;
   --light-shift-bg-color:#7ECCB4;
+  --mask-color:rgba(0, 0, 0, 0.45);
+  --show-card-font-color:#3F3D55;
+  --show-card-font-p-color:rgba(63, 61, 85, 0.63);
 }
 :root .dark{
   --light-body-bg-color:#24292e;
@@ -39,4 +42,7 @@
   --light-big-card-p-color:#768390;
   --light-font-style-color:#D6D8DA;
   --light-shift-bg-color:#7ECCB4;
+  --mask-color:rgba(0, 0, 0, 0.83);
+  --show-card-font-color:#D6D8DA;
+  --show-card-font-p-color:#768390;
 }
