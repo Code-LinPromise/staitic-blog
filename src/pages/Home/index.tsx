@@ -22,7 +22,7 @@ type User ={
 
 const Home = () => {
     const navigate=useNavigate()
-    function goDetails(id){
+    function goDetails(id:number){
         navigate(`/details/${id}`)
     }
     const array:string[]=["all","gossip","saying","chicken","create"]
@@ -47,7 +47,7 @@ const Home = () => {
                 </div>
                 <ul className={s.smallCard}>
                     {
-                        smallUserInfo.map((item:smallUser,index:number)=>{
+                        smallUserInfo.map((item,index:number)=>{
                             return <li key={index} onClick={()=>{goDetails(item.id)}} >
                                 <SmallCard userLogo={item.userLogo} userName={item.userName}
                                            tagTitle={item.tagTitle} image={item.image} title={item.title}

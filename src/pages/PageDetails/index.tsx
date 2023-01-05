@@ -15,14 +15,26 @@ type User ={
     time:string,
     id:number
 }
+
 const PageDetails = () => {
-    const [userDetails,setUserDetails]:Record<User>=useState({})
+    const [userDetails,setUserDetails]=useState<User>({
+        userLogo:"",
+        userName:"",
+        tagTitle:"",
+        image:"",
+        title:"",
+        details:"",
+        time:"",
+        id:0
+    })
     const { id }=useParams()
     const  userInfo =useUserInfo(state=>state.User)
     useEffect(()=>{
-        const info:User= userInfo.filter((item,index)=>{
-            if(item.id == id){
-                return item
+        const info:User[]= userInfo.filter((item,index)=>{
+            if(id && typeof id ==="number"){
+                if(item.id == id){
+                    return item
+                }
             }
         })
         setUserDetails(info[0])
