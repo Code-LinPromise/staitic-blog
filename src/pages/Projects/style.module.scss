@@ -10,11 +10,9 @@
     display: flex;
     width: 55vw;
     flex-wrap: wrap;
-
+    justify-content: space-around;
     >li{
       margin-top: 30px;
-      margin-right: 80px;
-
     }
   }
 }

@@ -39,6 +39,9 @@ const PageDetails = () => {
         })
         setUserDetails(info[0])
     },[])
+    useEffect(()=>{
+        document.body.scrollTop = document.documentElement.scrollTop = 0;yar
+    },[])
     return (
         <div className={s.wrapper}>
             <div className={s.userInfo}>
